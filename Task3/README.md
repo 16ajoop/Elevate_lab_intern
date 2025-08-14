@@ -47,21 +47,6 @@ This project demonstrates the implementation of **Simple** and **Multiple Linear
 5. **Evaluate Model**  
    - Metrics: MAE, MSE, R²  
 
----
-
-## 📊 Visuals
-
-### Simple Linear Regression
-`mpg ~ weight`
-
-![Simple Regression](https://via.placeholder.com/500x300.png?text=Regression+Line+Example)
-
-### Multiple Linear Regression
-Comparison of **actual vs predicted mpg**
-
-![Multiple Regression](https://via.placeholder.com/500x300.png?text=Actual+vs+Predicted)
-
----
 
 ## 📈 Metrics (Sample Output)
 - **Simple Regression:**  
