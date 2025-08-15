@@ -3,6 +3,7 @@
 1. **Class Distribution**
     Samples: 569 patients
     Features (30 total):
+   
       Measurements of cell nuclei (mean, standard error, worst values) such as:
          -radius_mean → average size of nucleus
          -texture_mean → variation in gray-scale values
@@ -18,7 +19,7 @@
    - Benign: ~63%  
    - Slight imbalance, but manageable for logistic regression.  
 
-   ⚠️ *Inference:* Accuracy alone is not enough — we must check Precision, Recall, and ROC-AUC.  
+    *Inference:* Accuracy alone is not enough — we must check Precision, Recall, and ROC-AUC.  
 
 ---
 
@@ -26,7 +27,7 @@
    - **Larger values** of `radius_mean`, `perimeter_mean`, `area_mean` → Malignant tumors.  
    - **Higher concavity values** → Malignant likelihood increases.  
 
-   ⚠️ *Inference:* Cell nucleus shape and size are strong predictors of cancer.  
+    *Inference:* Cell nucleus shape and size are strong predictors of cancer.  
 
 ---
 
@@ -34,7 +35,7 @@
    - Logistic Regression achieves **95–97% accuracy**.  
    - ROC-AUC ≈ **0.98** → excellent class separation.  
 
-   ⚠️ *Inference:* Logistic Regression works very well as a baseline classifier here.  
+    *Inference:* Logistic Regression works very well as a baseline classifier here.  
 
 ---
 
@@ -47,7 +48,7 @@
     - 3 → False Positives (healthy flagged as cancer)  
     - 5 → False Negatives (missed cancers)  
 
-⚠️ *Inference:* False negatives are more dangerous (missed cancer cases).  
+ *Inference:* False negatives are more dangerous (missed cancer cases).  
 
 ---
 
@@ -59,7 +60,7 @@
 | **0.5**   | 0.93      | 0.92   | Balanced trade-off (default)                            |
 | **0.7**   | 0.96      | 0.85   | Very precise but misses some cancers                    |
 
-⚠️ *Inference:* In healthcare, **lowering the threshold** (e.g., 0.3–0.4) is preferred to avoid missing cancer cases, even if it means more false positives.  
+ *Inference:* In healthcare, **lowering the threshold** (e.g., 0.3–0.4) is preferred to avoid missing cancer cases, even if it means more false positives.  
 
 ---
 6.**Summary of Insights**
